@@ -19,7 +19,7 @@ subtest "basics" => sub {
     is_deeply($c->("Bitcoin"), [1, undef, "bitcoin"]);
     is_deeply($c->("Btc"), [1, undef, "bitcoin"]);
     is_deeply($c->("ethereum classic"), [1, undef, "ethereum-classic"]);
-    is_deeply($c->("foo"), [1, "Unknown cryptocurrency code/name/safename", undef]);
+    is_deeply($c->("foo"), [1, "Unknown cryptocurrency code/name/safename: foo", undef]);
 
 };
 
